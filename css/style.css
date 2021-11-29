@@ -35,7 +35,7 @@ body {
   height: 600px;
   display: inline-block;
   position: absolute;
-  right: -250px;
+  right: -300px;
   top: 80px;
 }
 .main h2 {
@@ -67,16 +67,64 @@ body {
   transition: 0.5s ease all;
 }
 .main button:hover {
-  background-color: #ea635c8e;
+  background-color: #ea635ce7;
+  color: #f7f7f78f;
+  cursor: pointer;
 }
 
 .function {
   width: 80%;
-  height: 600px;
+  height: 200px;
 }
 .function img {
-  width: 326, 4px;
+  width: 326.4px;
   height: 489.6px;
+}
+.function .informations {
+  display: inline-block;
+  color: #333333;
+}
+.function .informations h2 {
+  font-size: 20px;
+}
+.function .informations::after {
+  position: absolute;
+  content: "";
+  background-color: #cfd0d0;
+  width: 4px;
+  height: 4px;
+}
+.function .informations::after {
+  position: absolute;
+  content: "";
+  background-color: #cfd0d0;
+  width: 4px;
+  height: 4px;
+}
+.function p {
+  font-size: 0.75rem;
+  line-height: 20px;
+}
+.function b {
+  color: #ea625c;
+}
+.function b::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 4px;
+  background-color: #ea625c;
+}
+
+.show {
+  width: 80%;
+  height: 300px;
+  position: relative;
+}
+.show img {
+  position: absolute;
+  top: 30px;
+  right: 80px;
 }
 
 .footer {

@@ -21,14 +21,19 @@ body {
   color: #999999;
 }
 .header input {
+  width: 160px;
+  height: 30px;
   border: none;
-  text-decoration-line: underline;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+  padding: 3px;
 }
 
 .main {
-  width: 80%;
+  width: 100%;
   height: 601px;
+  overflow: hidden;
   border-bottom: 1px solid #e0dfdf;
+  position: relative;
 }
 .main img {
   width: 625;
@@ -36,14 +41,14 @@ body {
   display: inline-block;
   position: absolute;
   right: -300px;
-  top: 80px;
+  top: 0;
 }
-.main h2 {
+.main h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #333333;
   margin-bottom: 50px;
-  padding: 150px 0 0 240px;
+  padding: 150px 0 0 300px;
 }
 .main .text {
   width: 550px;
@@ -52,7 +57,8 @@ body {
   color: #999;
   padding-left: 30px;
   border-left: 2px solid #999;
-  margin-left: 240px;
+  margin-left: 300px;
+  line-height: 25px;
 }
 .main button {
   width: 180px;
@@ -63,7 +69,7 @@ body {
   border-radius: 1px;
   font-size: 13px;
   font-weight: bold;
-  margin: 30px 0 0 240px;
+  margin: 30px 0 0 300px;
   transition: 0.5s ease all;
 }
 .main button:hover {
@@ -73,8 +79,8 @@ body {
 }
 
 .function {
-  width: 80%;
-  height: 200px;
+  width: 100%;
+  height: 920px;
 }
 .function img {
   width: 326.4px;
@@ -83,9 +89,16 @@ body {
 .function .informations {
   display: inline-block;
   color: #333333;
+  margin: 40px 10px;
 }
 .function .informations h2 {
   font-size: 20px;
+}
+.function .minfl {
+  margin-left: 350px;
+}
+.function .minfr {
+  margin-right: 200px;
 }
 .function .informations::after {
   position: absolute;
@@ -102,7 +115,7 @@ body {
   height: 4px;
 }
 .function p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 20px;
 }
 .function b {
@@ -117,19 +130,95 @@ body {
 }
 
 .show {
-  width: 80%;
-  height: 300px;
+  display: block;
+  width: 100%;
+  height: 720px;
   position: relative;
 }
 .show img {
+  width: 400px;
+  height: 600px;
   position: absolute;
-  top: 30px;
-  right: 80px;
+  top: 50px;
+  right: 240px;
+}
+.show h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 50px;
+  padding: 150px 0 0 300px;
+}
+.show .text {
+  width: 550px;
+  height: 100px;
+  font-size: 0.95rem;
+  color: #999;
+  padding-left: 30px;
+  border-left: 2px solid #999;
+  margin-left: 300px;
+  line-height: 25px;
+}
+.show button {
+  width: 110px;
+  height: 40px;
+  background-color: #ea625c;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 1px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 30px 0 0 300px;
+  transition: 0.5s ease all;
+}
+.show button:hover {
+  background-color: #ea635ce7;
+  color: #f7f7f78f;
+  cursor: pointer;
 }
 
 .footer {
   width: 100%;
-  height: 500px;
+  height: 800px;
+  background-image: url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 40px;
+}
+.footer h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 50px;
+  padding: 150px 0 0 800px;
+}
+.footer .text {
+  width: 550px;
+  height: 100px;
+  font-size: 0.95rem;
+  color: white;
+  padding-left: 30px;
+  border-left: 2px solid white;
+  margin-left: 800px;
+  line-height: 25px;
+}
+.footer button {
+  width: 200px;
+  height: 40px;
+  background-color: #ea625c;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 1px;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 30px 0 0 800px;
+  transition: 0.5s ease all;
+}
+.footer button:hover {
+  background-color: #ea635ce7;
+  color: #f7f7f78f;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
